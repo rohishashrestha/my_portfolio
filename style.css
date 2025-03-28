@@ -1,0 +1,161 @@
+/* View Design Button */
+.view-design {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #f9a825;
+    color: #0d0d0d;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.view-design:hover {
+    background: #ffb300;
+}
+
+.design-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.design-gallery img {
+    width: 30%;
+    max-width: 300px; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #FFF5E1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.design-gallery img:hover {
+    transform: scale(1.05); 
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFF5E1;
+    color: #fff;
+    
+}
+
+
+header {
+    padding: 40px;
+    background: linear-gradient(135deg, #b58ce8, #B8BCD8);
+    color: black;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.gallery {
+    padding: 40px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px; right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background: white;
+}
+
+
+footer {
+    padding: 20px;
+    background: #2b2535;
+    
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #b17ded;
+    text-decoration: none;
+}
+
+
+footer span a{
+    color: rgb(139, 139, 214);
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}

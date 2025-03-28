@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohisha's Design Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/imgs/r.png">
+</head>
+<body>
+
+    <header>
+        <h1 style="color: #2c3e50;">Rohisha's Design Portfolio </h1>
+        <!-- <p>Bringing ideas to life through creative design!</p> -->
+    </header>
+    <center><h1 class="heading" style="color: #2c3e50;">Bringing ideas to life through creative design.</h1>
+        <h2 class="subheading" style="color: #D4AF37;">View some of my designs below😉</h2></center>
+    <section class="gallery">
+        <div class="image-container">
+               
+            <img src="images/banner.jpg" alt="Design 1" onclick="openLightbox(this)">
+            <img src="images/shopnow.jpg" alt="Design 4" onclick="openLightbox(this)"> 
+            <img src="images/florence.jpg" alt="banner" onclick="openLightbox(this)">
+            <img src="images/coffee.jpg" alt="Design 2" onclick="openLightbox(this)">
+            <img src="images/hallowenmenu.jpg" alt="Design 4" onclick="openLightbox(this)"> 
+            <img src="images/mysteryball.jpg" alt="Design 5" onclick="openLightbox(this)">
+            <img src="images/newyear.png" alt="Design 4" onclick="openLightbox(this)"> 
+            <img src="images/pizza.jpg" alt="Design 5" onclick="openLightbox(this)">
+            <img src="images/cookies.jpg" alt="Design 3" onclick="openLightbox(this)">
+        </div>
+    </section>
+
+    <!-- Lightbox for full-screen display -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-content">
+        <button class="prev" onclick="showPrevImage()">&#10094;</button>
+        <button class="next" onclick="showNextImage()">&#10095;</button>
+    </div>
+
+    <footer>
+        <p>Let's collaborate! <a href="mailto:shrestharohisha44@gmail.com">Contact me</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
