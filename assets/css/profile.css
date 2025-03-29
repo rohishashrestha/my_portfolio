@@ -12323,8 +12323,12 @@ pre .code {
   width: 50%;
 }
 .skills-content .right .adobephotoshop::before{
-  width: 90%;
+  width: 80%;
 }
+.skills-content .right .adobeillustrator::before{
+  width: 80%;
+}
+
 
 footer{
   background: #111;
